@@ -20,11 +20,10 @@ body {
 
 #head {
 	background: rgba(255, 0, 0, 0.6);
-	height: 200px;
+	height: 220px;
 	padding-left: 0px;
 	padding-top: 10px;
-	width: 100%;
-	
+	width: 100.6%;
 }
 
 #headLeft {
@@ -41,7 +40,7 @@ body {
 	font-family: 'Raleway', sans-serif;
 	height: auto;
 	font-size: 20px;
-    color:white;
+	color: white;
 }
 
 .myTitleImage {
@@ -68,7 +67,6 @@ body {
 	height: 200px;
 	padding-left: 10px;
 	padding-top: 10px;
-	
 }
 
 #MyPortfolio {
@@ -84,9 +82,22 @@ body {
 	height: auto;
 	width: 100%;
 	background-color: rgba(205, 191, 172, 0.67);
-	
 	padding-top: 10px;
 	padding-left: 10px;
+}
+
+input[type=text]{
+padding:5px;
+width:250px;
+font: 1em;
+}
+select {
+	width: 250px;
+	padding: 5px;
+}
+textarea {
+	height: 100px;
+	width: 250px;
 }
 </style>
 
@@ -98,12 +109,13 @@ body {
 		<center>
 
 			<div id="headLeft">
-				<img class="myTitleImage" src="logos\DSCN0392.JPG" />
+				<img class="myTitleImage" src="images\DSCN0392.JPG" />
 			</div>
 
 			<div id="headRight">
 				<h1>
-					<b>THIRUPATHI <br>KALYAN KUMAR </b>
+					<b>THIRUPATHI <br>KALYAN KUMAR
+					</b>
 				</h1>
 			</div>
 		</center>
@@ -119,35 +131,59 @@ body {
 		examination in 2007
 	</div>
 	<div id="MyPortfolio">
-	
-		<b> My Portfolio</b>
-	
-		 <br /> <br /> My Portfolio provides a personal
+
+		<b> My Portfolio</b> <br /> <br /> My Portfolio provides a personal
 		learning environment to record and showcase evidence of achievement,
 		manage development plans, set goals, and create online learning
 		communities see <br> <a
 			href="https://github.com/kalyanthirupathi"> mygithub </a>
 	</div>
+
 	<div id="footer">
 
+		<b> Contact Me@ </b> <br /> <br /> <b>Send me a message to me </b>
+		<form action=" " method="post">
 
-		<b> Contact Me@ </b>
+			<input type="text" name="name"
+				id="name" value=" enter ur name" /> <br /> </br>Gender <br /> <input
+				type="radio" name="option" id="Male" value="Male" checked=" yes" />Male 
+				<input type="radio" name="option" id="Female" value="Female" />Female 
+				<input type="radio" name="option" id="Other" value="Other" />Other <br /> <br />
+			Your Interest(Please check all applicable)
+			</br> </br> <input type="checkbox" name=" " value=" " checked />Web
+			Developer</br> <input type="checkbox" name=" " value=" " />Softwate
+			Developer<br /> <input type="checkbox" name=" " value="  " />Oracle
+			Developer</br> <br /> Message :<br />
+			<textarea name="name" id="name" rows="10" cols="50"
+				value="enter ur comments">
+</textarea>
+			<br /> <br />
+			<select id=" choose">
+			<option>Choose your Option  </option>
+			<option> Student</option>
+			<option> professional</option>
+			<option> Company </option>
+			
+			</select>
+			<br>
+			<br>
+			<br>
+			 <input type="Submit" id="name" value="sumbit" />
+		</form>
 
-
-
-		<p align=right>
+		<p style="text-align: right">
 			<a href=" https://www.facebook.com"> <img class="myLogos"
-				src="logos\fb.png" /></a>
-				 <a href=" https://www.twitter.com"> <img class="myLogos"
-				src="logos\twitter.png" />
+				src="images\fb.png" /></a> <a href=" https://www.twitter.com"> <img
+				class="myLogos" src="images\twitter.png" />
 			</a> <a href=" https://www.linkedin.com"> <img class="myLogos"
-				src="logos\ln.png" />
+				src="images\ln.png" />
 			</a> <a href=" https://www.skype.com"> <img class="myLogos"
-				src="logos\skype.png" />
+				src="images\skype.png" />
 			</a>
 		</p>
 
 		<center>Email:kalyan0410@gmail.com</center>
+	</div>
 	</div>
 
 </body>
