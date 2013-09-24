@@ -3,103 +3,269 @@
 <html>
 <head>
 <title>kalyan kumar</title>
+
 <link href='http://fonts.googleapis.com/css?family=Raleway:500'
 	rel='stylesheet' type='text/css'>
 
-<style type="text/css">
-html {
-	padding: 0;
-	margin: 0;
-}
+<link href="style/style.css" rel='stylesheet' type='text/css'>
 
-body {
-	padding: 0;
-	margin: 0;
-	font-family: 'Raleway', sans-serif;
-}
+<script type="text/javascript">
+	function checkNumber(x) {
 
-#head {
-	background: rgba(255, 0, 0, 0.6);
-	height: 220px;
-	padding-left: 0px;
-	padding-top: 10px;
-	width: 100.6%;
-}
+		if (x == 42) {
+			console.log("yes");
+		} else {
+			console.log("no");
+		}
 
-#headLeft {
-	float: left;
-	width: 30%;
-	padding-left: 0px;
-	text-align: right;
-}
+	}
 
-#headRight {
-	float: right;
-	width: 70%;
-	text-align: left;
-	font-family: 'Raleway', sans-serif;
-	height: auto;
-	font-size: 20px;
-	color: white;
-}
+	checkNumber(42);
 
-.myTitleImage {
-	border: solid 1px white;
-	-webkit-border-radius: 999px;
-	-moz-border-radius: 999px;
-	border-radius: 999px;
-	width: 150px;
-	height: 150px;
-}
+	function largest(n1, n2) {
+		if (n1 > n2) {
+			console.log("valid");
+		} else {
+			console.log("invaid");
+		}
+	}
+	largest(12, 20);
+	largest(20, 12);
+	largest(40, 40);
 
-.myLogos {
-	border: solid 1px white;
-	-webkit-border-radius: 999px;
-	-moz-border-radius: 999px;
-	border-radius: 999px;
-	width: 50px;
-	height: 50px;
-}
+	function calc(n1, n2, n3) {
+		console.log(n1 + n2 + n3);
+		console.log(n1 - n2 - n3);
+		console.log(n1 * n2 * n3);
 
-#aboutMe {
-	width: 100%;
-	background-color: #e1dad3;
-	height: 200px;
-	padding-left: 10px;
-	padding-top: 10px;
-}
+	}
+	calc(41, 42, 43);
+	calc(41, 42, 43);
+	calc(41, 42, 43);
+	calc(41, 42, 43);
 
-#MyPortfolio {
-	height: 200px;
-	width: 100%;
-	background-color: rgba(225, 212, 192, 0.70);
-	font-color: black;
-	padding-top: 10px;
-	padding-left: 10px;
-}
+	function name(firstName, lastName) {
 
-#footer {
-	height: auto;
-	width: 100%;
-	background-color: rgba(205, 191, 172, 0.67);
-	padding-top: 10px;
-	padding-left: 10px;
-}
+		alert("hello  " + firstName + " " + lastName);
 
-input[type="text"],input[type="submit"]{
-padding:5px;
-width:250px;
-font: 1em;
-}
-select {
-	width: 250px;
-	padding: 5px;
-}
-textarea {
-	height: 100px;
-	width: 250px;
-}
-</style>
+	}
+	name("kalyan", "kumar");
+
+	function facebookUrl(name, url) {
+		console.log("<a href='"+ url+ " '> " + name + "  " + " </a> ");
+	}
+	facebookUrl("kalyan", "https://www.facebook.com/kalyan0410");
+
+	var i;
+
+	for (i = 0; i < 3; i++) {
+		console.log(i);
+	}
+
+	function printAll(n) {
+		for (n = 0; n < 10; n++) {
+			console.log(n);
+		}
+
+	}
+	printAll(9);
+
+	console.log("-------------------------------------");
+
+	function raise(x, y) {
+
+		console.log(Math.pow(x, y));
+	}
+
+	raise(2, 3);
+
+	console.log("-------------------------------------");
+
+	var Arr = [ 1, 2, 3, "x", "y" ];
+
+	for (i = 0; i < Arr.length; i++) {
+
+		console
+				.log("The number of an Array at index of " + i + " is "
+						+ Arr[i]);
+	}
+
+	console.log("-----------------------------------------------------");
+
+	var Arr1 = [ 1, 2, "kk" ];
+
+	console.log(Arr1.length);
+
+	Arr1.push("kalyan", "kumar", "hai", 444);
+	console.log(Arr1.length);
+	console.log("push" + " " + Arr1);
+
+	Arr1.pop("hai");
+	console.log(Arr1.length);
+	console.log("pop" + " " + Arr1);
+
+	Arr1.splice(2, 3);
+	console.log(Arr1.length);
+	console.log("splice" + "  " + Arr1);
+
+	console.log("-----------------------------------------------------");
+
+	function printArray(arr) {
+		for (i = 0; i < arr.length; i++) {
+
+			console.log("The number of an Array at index of " + i + " is "
+					+ arr[i]);
+
+		}
+
+	}
+	printArray([ 1, 2, 3, "kalyan" ]);
+
+	console.log("-----------------------------------------------------");
+
+	function pushArry(arr)
+
+	{
+
+		for (i = 0; i < arr.length; i++) {
+			console.log("The number of an Array at index of " + i + " is "
+					+ arr.push[i]);
+			console.log(arr);
+		}
+
+	}
+	pushArry(x = [ 1, 2, "hai" ]);
+
+	console.log("-----------------------------------------------------");
+
+	var j = 9;
+
+	while (j > 0)
+
+	{
+		console.log("there are " + j + "  " + "bottels in frize");
+		j = j - 1;
+		if (j == 3) {
+
+			break;
+
+		}
+	}
+
+	console.log("-----------------------------------------------------");
+
+	var odd;
+	for (i = 0; i < 100; i++) {
+
+		if (i % 2 == 0) {
+			continue;
+		} else
+			console.log("odd numbers" + i);
+
+	}
+
+	console.log("-----------------------------------------------------");
+
+	var personObject = {
+		firstName : "Jhon",
+		lastName : "smith"
+
+	};
+	console.log(personObject.firstName);
+	console.log(personObject.lastName);
+	personObject.age = "20", console.log(personObject.age);
+	console.log(personObject);
+
+	console.log("-----------------------------------------------------");
+
+	var carObject = {
+		color : "red",
+		regNo : 123456789,
+		company : "nissan"
+	};
+	console.log(carObject.color);
+	console.log(carObject.regNo);
+	console.log(carObject.company);
+	console.log(carObject);
+
+	console.log("-----------------------------------------------------");
+
+	function person1(name, age, gender) {
+
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+
+		this.personDetails = function()
+
+		{
+			return this.name + " is " + this.age + " " + "yearsold";
+
+		}
+		this.getGender = function()
+
+		{
+			return this.name + " is " + this.gender;
+
+		}
+	}
+
+	var p1 = new person1("jhon", 20, "male");
+	var p2 = new person1("kalyan", 21, "male");
+	var p3 = new person1("kumar", 22, "male");
+
+	console.log(p1.personDetails());
+	console.log(p1.getGender());
+	console.log("-----------------------------------------------------");
+	console.log(p2.personDetails());
+	console.log(p2.getGender());
+	console.log("-----------------------------------------------------");
+	console.log(p3.personDetails());
+	console.log(p3.getGender());
+	console.log("-----------------------------------------------------");
+
+	function company(name, emps, salary, location) {
+		this.name = name;
+		this.emp = emps;
+		this.sal = salary;
+		this.loc = location;
+
+		this.getCompanyDetails = function() {
+			return this.name + " --- " + this.emp + "  -- " + this.sal;
+
+		}
+
+		this.getLocation = function() {
+			return "Company is Located at  " + this.loc;
+		}
+	}
+
+	var c1 = new company("wipro", 2000, 15000, "Bangolre");
+	var c2 = new company("IBM", 1000, 10000, "Hyd");
+	var c3 = new company("Dell", 3000, 20000, "Delhi");
+
+	console.log(c1.getCompanyDetails());
+	console.log(c1.getLocation());
+	console.log(" ");
+
+	console.log(c2.getCompanyDetails());
+	console.log(c2.getLocation());
+	console.log(" ");
+	
+	console.log(c3.getCompanyDetails());
+	console.log(c3.getLocation());
+	
+</script>
+
+
+
+<script src="E:\warking\html\js\jquery.js">
+
+$
+</script>
+
+
+
 
 </head>
 
@@ -144,31 +310,27 @@ textarea {
 		<b> Contact Me@ </b> <br /> <br /> <b>Send me a message to me </b>
 		<form action=" " method="post">
 
-			<input type="text" name="name"
-				id="name" value=" enter ur name" /> <br /> </br>Gender <br /> <input
-				type="radio" name="option" id="Male" value="Male" checked=" yes" />Male 
-				<input type="radio" name="option" id="Female" value="Female" />Female 
-				<input type="radio" name="option" id="Other" value="Other" />Other <br /> <br />
-			Your Interest(Please check all applicable)
-			</br> </br> <input type="checkbox" name=" " value=" " checked />Web
-			Developer</br> <input type="checkbox" name=" " value=" " />Softwate
-			Developer<br /> <input type="checkbox" name=" " value="  " />Oracle
-			Developer</br> <br /> Message :<br />
+			<input type="text" name="name" id="name" value=" enter ur name" /> <br />
+			</br>Gender <br /> <input type="radio" name="option" id="Male"
+				value="Male" checked=" yes" />Male <input type="radio"
+				name="option" id="Female" value="Female" />Female <input
+				type="radio" name="option" id="Other" value="Other" />Other <br />
+			<br /> Your Interest(Please check all applicable) </br> </br> <input
+				type="checkbox" name=" " value=" " checked />Web Developer</br> <input
+				type="checkbox" name=" " value=" " />Softwate Developer<br /> <input
+				type="checkbox" name=" " value="  " />Oracle Developer</br> <br />
+			Message :<br />
 			<textarea name="name" id="name" rows="10" cols="50"
 				value="enter ur comments">
 </textarea>
-			<br /> <br />
-			<select id=" choose">
-			<option>Choose your Option  </option>
-			<option> Student</option>
-			<option> professional</option>
-			<option> Company </option>
-			
-			</select>
-			<br>
-			<br>
-			<br>
-			 <input type="Submit" id="name" value="sumbit" />
+			<br /> <br /> <select id=" choose">
+				<option>Choose your Option</option>
+				<option>Student</option>
+				<option>professional</option>
+				<option>Company</option>
+
+			</select> <br> <br> <br> <input type="Submit" id="name"
+				value="sumbit" />
 		</form>
 
 		<p style="text-align: right">
