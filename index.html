@@ -9,261 +9,9 @@
 
 <link href="style/style.css" rel='stylesheet' type='text/css'>
 
-<script type="text/javascript">
-	function checkNumber(x) {
 
-		if (x == 42) {
-			console.log("yes");
-		} else {
-			console.log("no");
-		}
-
-	}
-
-	checkNumber(42);
-
-	function largest(n1, n2) {
-		if (n1 > n2) {
-			console.log("valid");
-		} else {
-			console.log("invaid");
-		}
-	}
-	largest(12, 20);
-	largest(20, 12);
-	largest(40, 40);
-
-	function calc(n1, n2, n3) {
-		console.log(n1 + n2 + n3);
-		console.log(n1 - n2 - n3);
-		console.log(n1 * n2 * n3);
-
-	}
-	calc(41, 42, 43);
-	calc(41, 42, 43);
-	calc(41, 42, 43);
-	calc(41, 42, 43);
-
-	function name(firstName, lastName) {
-
-		alert("hello  " + firstName + " " + lastName);
-
-	}
-	name("kalyan", "kumar");
-
-	function facebookUrl(name, url) {
-		console.log("<a href='"+ url+ " '> " + name + "  " + " </a> ");
-	}
-	facebookUrl("kalyan", "https://www.facebook.com/kalyan0410");
-
-	var i;
-
-	for (i = 0; i < 3; i++) {
-		console.log(i);
-	}
-
-	function printAll(n) {
-		for (n = 0; n < 10; n++) {
-			console.log(n);
-		}
-
-	}
-	printAll(9);
-
-	console.log("-------------------------------------");
-
-	function raise(x, y) {
-
-		console.log(Math.pow(x, y));
-	}
-
-	raise(2, 3);
-
-	console.log("-------------------------------------");
-
-	var Arr = [ 1, 2, 3, "x", "y" ];
-
-	for (i = 0; i < Arr.length; i++) {
-
-		console
-				.log("The number of an Array at index of " + i + " is "
-						+ Arr[i]);
-	}
-
-	console.log("-----------------------------------------------------");
-
-	var Arr1 = [ 1, 2, "kk" ];
-
-	console.log(Arr1.length);
-
-	Arr1.push("kalyan", "kumar", "hai", 444);
-	console.log(Arr1.length);
-	console.log("push" + " " + Arr1);
-
-	Arr1.pop("hai");
-	console.log(Arr1.length);
-	console.log("pop" + " " + Arr1);
-
-	Arr1.splice(2, 3);
-	console.log(Arr1.length);
-	console.log("splice" + "  " + Arr1);
-
-	console.log("-----------------------------------------------------");
-
-	function printArray(arr) {
-		for (i = 0; i < arr.length; i++) {
-
-			console.log("The number of an Array at index of " + i + " is "
-					+ arr[i]);
-
-		}
-
-	}
-	printArray([ 1, 2, 3, "kalyan" ]);
-
-	console.log("-----------------------------------------------------");
-
-	function pushArry(arr)
-
-	{
-
-		for (i = 0; i < arr.length; i++) {
-			console.log("The number of an Array at index of " + i + " is "
-					+ arr.push[i]);
-			console.log(arr);
-		}
-
-	}
-	pushArry(x = [ 1, 2, "hai" ]);
-
-	console.log("-----------------------------------------------------");
-
-	var j = 9;
-
-	while (j > 0)
-
-	{
-		console.log("there are " + j + "  " + "bottels in frize");
-		j = j - 1;
-		if (j == 3) {
-
-			break;
-
-		}
-	}
-
-	console.log("-----------------------------------------------------");
-
-	var odd;
-	for (i = 0; i < 100; i++) {
-
-		if (i % 2 == 0) {
-			continue;
-		} else
-			console.log("odd numbers" + i);
-
-	}
-
-	console.log("-----------------------------------------------------");
-
-	var personObject = {
-		firstName : "Jhon",
-		lastName : "smith"
-
-	};
-	console.log(personObject.firstName);
-	console.log(personObject.lastName);
-	personObject.age = "20", console.log(personObject.age);
-	console.log(personObject);
-
-	console.log("-----------------------------------------------------");
-
-	var carObject = {
-		color : "red",
-		regNo : 123456789,
-		company : "nissan"
-	};
-	console.log(carObject.color);
-	console.log(carObject.regNo);
-	console.log(carObject.company);
-	console.log(carObject);
-
-	console.log("-----------------------------------------------------");
-
-	function person1(name, age, gender) {
-
-		this.name = name;
-		this.age = age;
-		this.gender = gender;
-
-		this.personDetails = function()
-
-		{
-			return this.name + " is " + this.age + " " + "yearsold";
-
-		}
-		this.getGender = function()
-
-		{
-			return this.name + " is " + this.gender;
-
-		}
-	}
-
-	var p1 = new person1("jhon", 20, "male");
-	var p2 = new person1("kalyan", 21, "male");
-	var p3 = new person1("kumar", 22, "male");
-
-	console.log(p1.personDetails());
-	console.log(p1.getGender());
-	console.log("-----------------------------------------------------");
-	console.log(p2.personDetails());
-	console.log(p2.getGender());
-	console.log("-----------------------------------------------------");
-	console.log(p3.personDetails());
-	console.log(p3.getGender());
-	console.log("-----------------------------------------------------");
-
-	function company(name, emps, salary, location) {
-		this.name = name;
-		this.emp = emps;
-		this.sal = salary;
-		this.loc = location;
-
-		this.getCompanyDetails = function() {
-			return this.name + " --- " + this.emp + "  -- " + this.sal;
-
-		}
-
-		this.getLocation = function() {
-			return "Company is Located at  " + this.loc;
-		}
-	}
-
-	var c1 = new company("wipro", 2000, 15000, "Bangolre");
-	var c2 = new company("IBM", 1000, 10000, "Hyd");
-	var c3 = new company("Dell", 3000, 20000, "Delhi");
-
-	console.log(c1.getCompanyDetails());
-	console.log(c1.getLocation());
-	console.log(" ");
-
-	console.log(c2.getCompanyDetails());
-	console.log(c2.getLocation());
-	console.log(" ");
-	
-	console.log(c3.getCompanyDetails());
-	console.log(c3.getLocation());
-	
-</script>
-
-
-
-<script src="E:\warking\html\js\jquery.js">
-
-$
-</script>
-
+<script src="js/jquery.js"></script>
+<script src="js/general.js"></script>
 
 
 
@@ -288,26 +36,41 @@ $
 	</div>
 
 
-	<div id="aboutMe">
-		<b>About me </b> <br /> <br /> I am T.Kalyan Kumar completed my MCA.</br>
-		I got Awarded First Prize in “Coffee with JAVA” event held at AVANTHI
-		Group of Institutions in TECH-RESONANCE 2012. Second place in CHESS
-		for “Inter-Zonal Tournaments 2009-2010” held at Girraj college,
-		Nizamabad. Certified NCC cadet with “ B ” certificate and passed the
-		examination in 2007
-	</div>
-	<div id="MyPortfolio">
+	<div id="aboutMe" class="rectangle">
 
-		<b> My Portfolio</b> <br /> <br /> My Portfolio provides a personal
-		learning environment to record and showcase evidence of achievement,
-		manage development plans, set goals, and create online learning
-		communities see <br> <a
+		<b> [+]About me </b> <br />
+
+
+	</div>
+	<div class="change" id="aboutMeDesc">
+		<br /> <br /> I am T.Kalyan Kumar completed my MCA.</br> I got Awarded
+		First Prize in “Coffee with JAVA” event held at AVANTHI Group of
+		Institutions in TECH-RESONANCE 2012. Second place in CHESS for
+		“Inter-Zonal Tournaments 2009-2010” held at Girraj college, Nizamabad.
+		Certified NCC cadet with “ B ” certificate and passed the examination
+		in 2007
+	</div>
+
+	<div id="MyPortfolio" class="rectangle">
+
+		<b> [+] My Portfolio</b>
+
+	</div>
+	<div class="change" id="myPortfolioDesc">
+		<br /> My Portfolio provides a personal learning environment to
+		record and showcase evidence of achievement, manage development plans,
+		set goals, and create online learning communities see <br> <a
 			href="https://github.com/kalyanthirupathi"> mygithub </a>
 	</div>
 
-	<div id="footer">
+	<div id="footer" class="rectangle">
 
-		<b> Contact Me@ </b> <br /> <br /> <b>Send me a message to me </b>
+		<b>[+] Contact Me@ </b>
+
+	</div>
+
+	<div class="change" id="footerDesc">
+		<br /> <b>Send me a message to me </b>
 		<form action=" " method="post">
 
 			<input type="text" name="name" id="name" value=" enter ur name" /> <br />
@@ -322,7 +85,9 @@ $
 			Message :<br />
 			<textarea name="name" id="name" rows="10" cols="50"
 				value="enter ur comments">
-</textarea>
+				
+			</textarea>
+
 			<br /> <br /> <select id=" choose">
 				<option>Choose your Option</option>
 				<option>Student</option>
@@ -330,23 +95,48 @@ $
 				<option>Company</option>
 
 			</select> <br> <br> <br> <input type="Submit" id="name"
-				value="sumbit" />
+				value="sumbit" /> <input type="button" value="clickMe" id="clickMe" />
+			<input type="button" value="hide" id="hidebtn" /> <input
+				type="button" value="show" id="showbtn" /> <input type="button"
+				value="changeBackground" id="change" />
 		</form>
 
-		<p style="text-align: right">
-			<a href=" https://www.facebook.com"> <img class="myLogos"
-				src="images\fb.png" /></a> <a href=" https://www.twitter.com"> <img
-				class="myLogos" src="images\twitter.png" />
-			</a> <a href=" https://www.linkedin.com"> <img class="myLogos"
-				src="images\ln.png" />
-			</a> <a href=" https://www.skype.com"> <img class="myLogos"
-				src="images\skype.png" />
-			</a>
-		</p>
+
 
 		<center>Email:kalyan0410@gmail.com</center>
+
+		<table>
+			<tr>
+				<th>Column 1 Heading</th>
+				<th>Column 2 Heading</th>
+			</tr>
+			<tr>
+				<td>Row 1: Col 1</td>
+				<td>Row 1: Col 2</td>
+			</tr>
+		</table>
 	</div>
-	</div>
+	<center>
+
+		<p style="text-align: center">
+		
+			<a href=" https://github.com/kalyanthirupathi"> <img
+				class="myLogos" src="images\github_alt.png"/>
+			</a>
+			<a href=" https://www.facebook.com"> <img class="myLogos"
+				src="images\facebook_circle_color-64.png"/></a>
+				 <a
+				href=" https://www.twitter.com"> <img class="myLogos"
+				src="images\twitter_circle_color-64.png"/>
+			</a>
+			 <a href=" https://www.linkedin.com"> <img class="myLogos"
+				src="images\linkedin_circle_color-64.png"/>
+			</a> <a href=" https://www.skype.com"> <img class="myLogos"
+				src="images\skype_circle_color-64.png"/>
+			</a>
+
+		</p>
+	</center>
 
 </body>
 </html>
