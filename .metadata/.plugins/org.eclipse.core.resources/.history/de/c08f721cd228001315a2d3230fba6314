@@ -1,0 +1,81 @@
+<!-- Copyright (c) 2012 Mobile Developer Solutions -->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-type" name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<title>Weather App Demo</title>
+
+<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.1.0.min.css" />
+<link rel="stylesheet" href="index.css" />
+
+<script src="jquery.mobile/jquery-1.7.2.min"></script>
+<script src="jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8" src="index.js"></script>
+
+</head>
+
+<body onload="init();">
+	<div data-role="page" id="page-home" class="type-interior"
+		data-theme="b">
+
+		<div data-role="header" data-theme="b">
+			<h1>Weather API Demo</h1>
+			<a href="#" data-icon="home" data-iconpos="notext" id="intro"
+				class="ui-btn-right">intro</a>
+		</div>
+
+		<div data-role="content" data-theme="c">
+			<div class="content-secondary">
+				<div data-role="collapsible" data-collapsed="true" data-theme="b"
+					data-content-theme="b">
+					<h3>PhoneGap API</h3>
+
+					<ul data-role="listview" data-theme="b" data-dividertheme="b">
+
+						<li><a id="click-geolocation">Geolocation</a></li>
+
+					</ul>
+				</div>
+			</div>
+			
+			<div class="api-div" id="api-geolocation">
+					<h2>Geolocation</h2>
+					<blockquote>
+						<p>
+							The
+							<code>geolocation</code>
+							object provides access to the device's GPS sensor.
+						</p>
+					</blockquote>
+					<h4 class="help">
+						<b>Toggle</b> to stop/start geolocation watch. <br />
+						<b>Get Current</b> for one-time geolocation reading.
+					</h4>
+					<div class="ui-grid-a">
+						<div class="ui-block-a">
+							<div data-role="button" onclick="toggleWatchPosition();">Toggle</div>
+						</div>
+						<div class="ui-block-b">
+							<div data-role="button" onclick="getCurrentPosition();">Get
+								Current</div>
+						</div>
+					</div>
+					<div id="cur_position"></div>
+					<img id="map" />
+				</div>
+					
+				</div>
+
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" class="footer-docs"
+			data-theme="b">
+			<p>&copy; 2012 Mobile Developer Solutions</p>
+		</div>
+	</div>
+		<script type="text/javascript" charset="utf-8"src="apis/geolocation.js"></script>
+	
+</body>
+</html>

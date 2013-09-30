@@ -1,0 +1,7 @@
+  
+
+       $(document).ready(function(){
+	
+	//Here we write the all Jquery codes
+	
+         });

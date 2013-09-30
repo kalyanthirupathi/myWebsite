@@ -1,0 +1,108 @@
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+background-image:url('posterimages\background.jpg');
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+#head {
+	background: rgba(255, 0, 0, 0.6);
+	height: 220px;
+	padding-left: 0px;
+	padding-top: 10px;
+	width: 100;
+}
+
+#headLeft {
+	float: left;
+	width: 30%;
+	padding-left: 0px;
+	text-align: right;
+}
+
+#headRight {
+	float: right;
+	width: 70%;
+	text-align: left;
+	font-family: 'Raleway', sans-serif;
+	height: auto;
+	font-size: 20px;
+	color: white;
+}
+
+.myTitleImage {
+	border: solid 1px white;
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	border-radius: 999px;
+	width: 150px;
+	height: 150px;
+}
+
+.myLogos {
+	border: solid 1px white;
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	border-radius: 999px;
+	width:50px;
+	height:50px;
+	
+}
+
+a
+{
+	text-decoration:none;
+}
+
+
+#aboutMe {
+	width: 100%;
+	background-color: #e1dad3;
+	height: auto;
+	
+}
+
+#MyPortfolio {
+	height: auto;
+	width: 100%;
+	background-color: rgba(225, 212, 192, 0.70);
+	font-color: black;
+	padding-top: 10px;
+}
+
+#footer {
+	height: auto;
+	width: 100%;
+	background-color: rgba(205, 191, 172, 0.67);
+	padding-top: 10px;s
+}
+
+input[type="text"],input[type="submit"]{
+padding:5px;
+width:250px;
+font: 1em;
+}
+select {
+	width: 250px;
+	padding: 5px;
+}
+textarea {
+	height: 100px;
+	width: 250px;
+}
+.rectangle
+{
+min-height:30px;
+line-height:30px;
+}
+ .change
+{
+	display:none;
+	background-color: rgba(255, 255, 255, 1);
+	}
+	

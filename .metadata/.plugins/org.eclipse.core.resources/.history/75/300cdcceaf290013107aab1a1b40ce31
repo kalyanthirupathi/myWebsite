@@ -1,0 +1,125 @@
+var movieArray = [];
+var str = "";
+var resultList = [];
+
+
+$('#page-home').live('pageshow', function(event){
+	
+	$("body").delegate(
+			".movieList",
+			"click",
+			function() {
+
+				var movieIndex = "#details"
+						+ $(this).attr("movieId");
+				console.log(movieIndex);
+				
+				trailer($(this).attr("movieId"),movieIndex);
+			});
+
+	
+//$(document).ready(function(){
+	$("#intro")
+	.click(
+			function() {
+				var htmlString= "Your movie will display here ";
+				$("#movie").html(htmlString);
+
+                $("#enterMovie").val('');
+			});
+	
+	
+	$("#search").click(function() {
+		var text = $("#enterMovie").val();
+		if (text == 0) {
+
+			alert("enter movie name here");
+		} else
+
+		{
+			// search();
+			searchMovie(text);
+
+		}
+		
+		
+	});
+
+	$("#enterMovie").click(function() {
+		$("#enterMovie").val('');
+	});
+
+});
+
+
+function trailer(trailerId,movieIndex){
+	
+	var trailerUrl = "http://api.themoviedb.org/3/movie/"+trailerId+"/trailers?api_key=9a3cc6d14b4765b19587e229556ae226";
+	
+		$.ajax({url : trailerUrl,dataType : "jsonp"}).done(function(result) {
+		
+		var trailerLink = "<a href='http://www.youtube.com/watch?v="+trailerUrl+"'>Click to view Trailer</a>";
+		$(movieIndex).append(trailerLink);
+		$(movieIndex).show();
+		console.log(result.youtube[0].source);
+              
+				
+});
+}
+
+function searchMovie(movieName) {
+
+	var str = "";
+
+	$("#movie").html("getting movie  details, please standby...");
+
+	var apiUrl = "http://api.themoviedb.org/3/search/movie?api_key=9a3cc6d14b4765b19587e229556ae226&query="
+			+ movieName;
+
+	console.log(apiUrl);
+
+	$.ajax({
+				url : apiUrl,
+				dataType : "jsonp"
+			})
+			.done(
+					function(result) {
+
+						if (result.results.length > 0) {
+							console.log(result);
+							var resultList = [];
+							var resultList = result.results;
+
+							for (var j = 0; j < resultList.length; j++) {
+
+								if (resultList[j] !== null) {
+									str = str + "<div class='movieList'";
+									str = str + "movieId='" + resultList[j].id+ "'>" + resultList[j].original_title;
+									str = str + "<div class='details' id='details"	+ resultList[j].id
+											+ "'><img src='http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w185"
+											+ resultList[j].poster_path
+											+ "'/></div></div>";
+
+								}
+
+								else {
+									continue;
+								}
+							}
+							
+						} else {
+							str = "Sorry, no movies in our database with that name, please try again.."
+						}
+
+						$("#movie").html(str);
+							
+						
+						
+						
+					}).fail(function() {
+				console.log("Error occured");
+
+				$("#movie").html("Internal Error occured. Please try again.");
+
+			});
+}

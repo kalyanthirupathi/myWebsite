@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=320; user-scalable=no" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Weather Maps Api</title>
+<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.1.0.min.css" />
+<link href='http://fonts.googleapis.com/css?family=Satisfy'
+       rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="index.css" />
+<link rel="stylesheet" href="styleweb/styleweb.css" />
+<script src="jquery.mobile/jquery-1.7.2.min"></script>
+<script src="jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="index.js"></script>
+<script src="js/webApp.js"></script>
+<script src="js/mapsApp.js"></script>
+<script type="text/javascript" charset="utf-8">
+	var onDeviceReady = function() {
+		document.getElementById("devready").innerHTML = "OnDeviceReady fired.";
+	};
+
+	function init() {
+		document.addEventListener("deviceready", onDeviceReady, true);
+	}
+</script>
+
+</head>
+<body onload="init();" id="stage" class="theme">
+	<h2>Weather App</h2>
+
+	<div
+		style="background-color: black; font-size: 2.3em; color: white; text-align: center">
+		Weather Report</div>
+	<br />
+	<br />
+	<br /> <
+	<div class="mapholder">
+		<div id="map-canvas"></div>
+	</div>
+
+	<div id="container">see here what u get</div>
+
+
+	<br />
+
+	<div id="statusMsg"></div>
+
+
+	<p>
+		<span id="devready">onDeviceReady not fired.</span>
+	</p>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>Weather Report</title>
+<link href="style/webApp.css" rel='stylesheet' type='text/css'>
+<script
+	src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"
+	type="text/javascript"></script>
+
+<script src="js/jquery.js">
+	
+</script>
+<script src="js/webApp.js">
+	
+</script>
+<script src="js\mapsApp.js">
+	
+</script>
+</head>
+
+<body>
+	<div
+		style="background-color: black; font-size: 2.3em; color: white; text-align: center">
+		Weather Report</div>
+	<br />
+	<br />
+	<br />
+
+	<center>
+
+		
+			<input type="text" id="searchTextField" class="textCity"
+				placeholder="Enter a location to retrieve weather details"
+				autocomplete="on" />
+	
+
+<div id="statusMsg"
+			style="background-color: rgba(0, 128, 0, 0.22); text-align center; font-family: arial; font-size: 1.5em;"></div>
+
+
+	</center>
+
+	<div class="mapholder">
+		<div id="map-canvas"></div>
+	</div>
+
+	<div id="container">
+
+		<div style="background-color: rgba(0, 0, 255, 0.31);">
+			Hey! <br /> <br />here  get your location &
+			latest weather at your location..
+		</div>
+
+	</div>
+
+
+
+
+</body>
+
+</html>

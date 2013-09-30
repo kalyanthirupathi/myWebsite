@@ -1,0 +1,65 @@
+html,body {
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+	background-color: #C0C0C0;
+	color: black;
+}
+
+#container {
+	background-color: #ededed;
+	margin: 8%;
+	height: auto;
+	width: 60%;
+	-moz-border-radius: 15px;
+	-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	background: white;
+	margin-left: 15%;
+	margin-top: 5%;
+	padding: 10px;
+}
+
+#location {
+	background-color: rgba(0, 0, 255, 0.56);
+	margin-bottom: 5px;
+}
+
+.weatherData {
+	background-color: rgba(255, 165, 0, 0.49);
+	margin-bottom: 5px;
+}
+
+.wind {
+	margin-top: 5px;
+	background-color: rgba(0, 128, 0, 0.49);
+}
+
+.textCity {
+	-moz-border-radius: 15px;
+	-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	width: 30%;
+	height: 40px;
+	padding: 5px;
+}
+
+.mapholder {
+	padding: 15px;
+	margin-top: 2%;
+	margin-left: 15%;
+	width: 60%;
+	-moz-border-radius: 15px;
+	-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	background: white;
+}
+
+#map-canvas {
+	height: 200px;
+	position: "absolute";
+	top: 0px;
+	left: 0px;
+	overflow: "hidden";
+	width: 100%;
+}

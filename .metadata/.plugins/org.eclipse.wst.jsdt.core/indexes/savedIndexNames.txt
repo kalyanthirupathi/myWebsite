@@ -1,0 +1,8 @@
+INDEX VERSION 1.122+E:\warking\html\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4168310857.index
+1897395362.index
+1563367957.index
+3505654159.index
+2186775365.index
+4276414100.index
+4152664010.index
